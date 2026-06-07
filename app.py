@@ -106,8 +106,20 @@ with col2:
         # Pesan custom elegan (pengganti st.success bawaan yang warnanya hijau kaku)
         pesan_sukses = """
         <div style='text-align: center; padding: 20px; background-color: #FCE4EC; border-radius: 15px; color: #5E3A41; margin-top: 15px; border: 1px solid #F8BBD0; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>
-            <b>Aku minta maaf banget cantik..><br>
-            Aku minta maaf banget ya cantik buat hari ini, Aku ngga tau kenapa ngga bisa ngendaliin emosi dan ego aku ❤️
+            <b>Aku minta maaf banget cantik.. baca ini ya..<br>
+            Aku minta maaf banget ya cantik buat hari ini, Aku ngga tau kenapa ngga bisa ngendaliin emosi dan ego aku 
+            Ngga seharusnya aku negelakuin hal kaya tadi, bener bener kaya bocil banget, aku tau dari awal semuanya salah aku
+            kamu di betein temen kamu, aku malah betingkah kaya gitu, aku malah ikutan bete bukannya nemenin kamu, disaat kamu bete
+            aku malah kaya gitu, aku bener bener minta maaf ya sayang, kamu orang spesial buat aku cantik, aku mau kamu, aku mau andrea,
+            bukan badan kamu, kamu bukan fantasi aku, kamu perempuan aku, kamu cantik nya aku, kamu imutnya aku, kamu manis nya aku, dan
+            tetep jadi cewe yang ribet, yang sensian, yang gedein masalah, karena daya tarik kamu sebenernya disitu cantik, aku ngga mau
+            kamu jadi orang lain di depan aku, aku mau andrea jadi andrea, tetep jadi cewe imut yang prengat prengut ya cantik, tetep jadi
+            anak imut yang perasa dan bener bener merhatiin hal sekecil apapun, aku bener bener ngga mau kamu jadi orang lain, karena aku mau kamu
+            bukan orang lain, aku bener bener minta maaf buat hari ini ya sayang, satu kesalahan yang bener bener fatal, tapi terus jujur ke aku
+            ya cantik, aku mau perbaikin diri aku buat kamu, jangan di simpen simpenn dan di tahan tahan unek unek kamu, keluarin aja, biar aku
+            jadi cowo yang kamu mau, ajarin aku, bimbing aku, aku bakal berubah demi kamu andrea.. dengan segala kekurangan dan kelemahan aku
+            yang bahkan bisa di bilang sangat banyak, tapi aku bener bener mau berjuang buat kamu, walaupun aku bodoh, aneh, dan ngga jelas
+            setidaknya tekad aku ada karena aku beneran sayang banget sama kamu..❤️
         </div>
         """
         st.markdown(pesan_sukses, unsafe_allow_html=True)
