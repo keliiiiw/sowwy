@@ -18,7 +18,7 @@ tema_pink = """
 
 /* Mengubah font dan warna teks secara keseluruhan (cokelat elegan) */
 html, body, [class*="css"] {
-    color: #5E3A41;
+    color: #5E3A41 !important;
     font-family: 'Georgia', serif;
 }
 
@@ -30,8 +30,9 @@ h1 {
     padding-bottom: 10px;
 }
 
-/* Memusatkan teks paragraf bagian atas */
+/* Memusatkan teks paragraf bagian atas dan MEMAKSA warna cokelat agar tidak hilang di mode gelap HP */
 p {
+    color: #5E3A41 !important;
     text-align: center;
     font-size: 18px;
     line-height: 1.6;
@@ -48,8 +49,8 @@ div.stButton {
 }
 
 div.stButton > button:first-child {
-    background-color: #E2A9B4;
-    color: white;
+    background-color: #E2A9B4 !important;
+    color: white !important;
     border: none;
     border-radius: 30px;
     padding: 12px 24px;
@@ -62,8 +63,8 @@ div.stButton > button:first-child {
 
 /* Efek saat tombol disentuh (hover) */
 div.stButton > button:first-child:hover {
-    background-color: #C07C88;
-    color: white;
+    background-color: #C07C88 !important;
+    color: white !important;
     transform: translateY(-3px);
     box-shadow: 0px 8px 18px rgba(192, 124, 136, 0.6);
 }
@@ -85,7 +86,7 @@ st.markdown(tema_pink, unsafe_allow_html=True)
 
 
 # --- KONTEN WEB ---
-st.markdown("<h1>Halo Andrea.. 🎀</h1>", unsafe_allow_html=True)
+st.markdown("<h1>Halo Sayang... 🎀</h1>", unsafe_allow_html=True)
 st.write("---")
 
 st.write("Aku tau aku salah, dan aku bener-bener minta maaf ya.")
