@@ -42,24 +42,36 @@ p {
 footer {visibility: hidden;}
 
 /* Desain untuk Tombol */
+div.stButton {
+    display: flex;
+    justify-content: center;
+}
+
 div.stButton > button:first-child {
     background-color: #E2A9B4;
     color: white;
     border: none;
-    border-radius: 20px; /* Membuat ujung tombol melengkung halus */
-    padding: 10px 24px;
+    border-radius: 30px; /* Ujung lebih melengkung elegan */
+    padding: 12px 24px;
     font-size: 18px;
     font-weight: bold;
     width: 100%;
-    transition: 0.3s;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.05); /* Bayangan lembut */
+    transition: all 0.3s ease; /* Animasi transisi lebih halus */
+    box-shadow: 0px 4px 12px rgba(226, 169, 180, 0.4); /* Bayangan/glow lembut */
 }
 
 /* Efek saat tombol disentuh (hover) */
 div.stButton > button:first-child:hover {
     background-color: #C07C88;
     color: white;
-    transform: translateY(-2px); /* Efek tombol sedikit terangkat */
+    transform: translateY(-3px); /* Efek tombol melayang elegan */
+    box-shadow: 0px 8px 18px rgba(192, 124, 136, 0.6); /* Glow memancar saat di-hover */
+}
+
+/* Efek saat tombol diklik/ditekan (active) - Meriah tapi minimalis */
+div.stButton > button:first-child:active {
+    transform: translateY(1px) scale(0.95); /* Efek membal ke dalam saat dipencet */
+    box-shadow: 0px 2px 6px rgba(192, 124, 136, 0.4);
 }
 
 /* Membuat kotak pesan sukses/error lebih melengkung */
@@ -82,15 +94,34 @@ st.write("Aku sayang banget sama kamu.")
 
 st.write("") # Spasi kosong biar rapi
 
-# Membuat 3 kolom agar tombol berada pas di tengah dan tidak terlalu panjang
-col1, col2, col3 = st.columns([1, 2, 1])
+# Membuat 3 kolom agar tombol berada pas di tengah dan proporsional ukurannya
+col1, col2, col3 = st.columns([1, 1.2, 1])
 
 with col2:
-    if st.button("Iya, aku maafin 💖"):
-        st.balloons()
-        st.success("Makasih banyak sayang! Aku janji bakal lebih baik lagi. I love you! ❤️")
+    # use_container_width=True memastikan tombol memenuhi tengah kolom secara simetris
+    if st.button("Iya, aku maafin 💖", use_container_width=True):
+        st.balloons() # Animasi balon meriah dari streamlit
+        st.toast("Terima kasih sayang... ❤️", icon="💖") # Notifikasi pop-up kecil elegan di sudut
         
-    st.write("") # Spasi antar tombol
+        # Pesan custom elegan (pengganti st.success bawaan yang warnanya hijau kaku)
+        pesan_sukses = """
+        <div style='text-align: center; padding: 20px; background-color: #FCE4EC; border-radius: 15px; color: #5E3A41; margin-top: 15px; border: 1px solid #F8BBD0; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>
+            <b>Makasih banyak sayang! 🥰</b><br>
+            Aku janji bakal lebih baik lagi dan nggak ngecewain kamu. I love you! ❤️
+        </div>
+        """
+        st.markdown(pesan_sukses, unsafe_allow_html=True)
         
-    if st.button("Masih bete 😤"):
-        st.error("Gapapa kalau kamu masih marah. Aku bakal terus usaha sampe kamu luluh. 😔🫶")
+    st.write("") # Spasi antar tombol biar lega
+        
+    if st.button("Masih bete 😤", use_container_width=True):
+        st.toast("Gapapa, aku ngerti... 🥺", icon="🌧️")
+        
+        # Pesan custom elegan (pengganti st.error bawaan yang warnanya merah kaku)
+        pesan_error = """
+        <div style='text-align: center; padding: 20px; background-color: #F5EAEB; border-radius: 15px; color: #5E3A41; margin-top: 15px; border: 1px solid #E2A9B4; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>
+            <b>Gapapa kalau kamu masih marah.</b><br>
+            Aku bakal terus usaha sampe kamu luluh. 😔🫶
+        </div>
+        """
+        st.markdown(pesan_error, unsafe_allow_html=True)
