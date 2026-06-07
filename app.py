@@ -106,8 +106,8 @@ with col2:
         # Pesan custom elegan (pengganti st.success bawaan yang warnanya hijau kaku)
         pesan_sukses = """
         <div style='text-align: center; padding: 20px; background-color: #FCE4EC; border-radius: 15px; color: #5E3A41; margin-top: 15px; border: 1px solid #F8BBD0; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>
-            <b>Makasih banyak sayang! 🥰</b><br>
-            Aku janji bakal lebih baik lagi dan nggak ngecewain kamu. I love you! ❤️
+            <b>Aku minta maaf banget cantik..><br>
+            Aku minta maaf banget ya cantik buat hari ini, Aku ngga tau kenapa ngga bisa ngendaliin emosi dan ego aku ❤️
         </div>
         """
         st.markdown(pesan_sukses, unsafe_allow_html=True)
