@@ -85,12 +85,12 @@ st.markdown(tema_pink, unsafe_allow_html=True)
 
 
 # --- KONTEN WEB ---
-st.markdown("<h1>Hai Andrea.. 🎀</h1>", unsafe_allow_html=True)
+st.markdown("<h1>Halo Sayang... 🎀</h1>", unsafe_allow_html=True)
 st.write("---")
 
-st.write("Aku bener bener salah, dan aku bener-bener minta maaf ya.")
-st.write("Website kecil ini aku buat khusus buat kamu, emang sepele dan bener bener freak banget")
-st.write("Tapi aku harap kamu bener bener happy karena gebrakan aneh aku ini ya")
+st.write("Aku tau aku salah, dan aku bener-bener minta maaf ya.")
+st.write("Website kecil ini aku buat khusus buat kamu, sebagai tanda kalau aku serius mau perbaikin semuanya.")
+st.write("Aku sayang banget sama kamu.")
 
 st.write("") # Spasi kosong biar rapi
 
@@ -109,7 +109,7 @@ with col2:
 
 if tombol_maaf:
     st.balloons()
-    st.toast("Aku sayang kamu.. ❤️", icon="💖")
+    st.toast("Terima kasih sayang... ❤️", icon="💖")
     
     pesan_sukses = (
         "<div style='padding: 30px; background-color: #FCE4EC; border-radius: 15px; color: #5E3A41; margin-top: 25px; border: 1px solid #F8BBD0; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>"
@@ -130,8 +130,8 @@ if tombol_maaf:
         "<br><br>"
         "Aku bener-bener minta maaf buat hari ini ya sayang, satu kesalahan yang bener-bener fatal. "
         "Tapi terus jujur ke aku ya cantik, aku mau perbaikin diri aku buat kamu. Jangan disimpen-simpen dan ditahan-tahan "
-        "unek-unek kamu, keluarin aja, biar aku jadi cowo yang kamu mau. Ajarin aku, bimbing aku, aku bakal berubah demi kamu Andrea..
-        maaf kalau aku bener bener bullshit, dan beda dari ketikan chat aku, aku bener bener malu sayang.. maaf andrea.."
+        "unek-unek kamu, keluarin aja, biar aku jadi cowo yang kamu mau. Ajarin aku, bimbing aku, aku bakal berubah demi kamu Andrea.. "
+        "maaf kalau aku bener bener bullshit, dan beda dari ketikan chat aku, aku bener bener malu sayang.. maaf andrea.."
         "<br><br>"
         "Dengan segala kekurangan dan kelemahan aku yang bahkan bisa dibilang sangat banyak, tapi aku bener-bener mau berjuang buat kamu. "
         "Walaupun aku bodoh, aneh, dan ngga jelas, setidaknya tekad aku ada karena aku beneran sayang banget sama kamu.. ❤️"
@@ -146,10 +146,10 @@ elif tombol_bete:
     pesan_error = (
         "<div style='text-align: center; padding: 20px; background-color: #F5EAEB; border-radius: 15px; color: #5E3A41; margin-top: 25px; border: 1px solid #E2A9B4; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>"
         "<b>aku kangen banget andrea.. jangan lama lama ya.. </b><br>"
-        "Aku kangen banget sama kamu, bener bener sekangen itu.. aku tau sekarang udah susah kamu buat percaya aku lagi
-        tapi serius cantik, aku bener bener kangen sama kamu, dan aku janji ngga akan bodoh kaya gini lagi, aku akan berusaha
-        jadi klei yang terbaik buat andrea, aku bener bener minta maaf ya, jangan lama lama buat waktu sendiri nya ya.. aku bener
-        bener ngga bisa tidur sayang kalo ngga denger suara kamu 😔🫶"
+        "Aku kangen banget sama kamu, bener bener sekangen itu.. aku tau sekarang udah susah kamu buat percaya aku lagi "
+        "tapi serius cantik, aku bener bener kangen sama kamu, dan aku janji ngga akan bodoh kaya gini lagi, aku akan berusaha "
+        "jadi klei yang terbaik buat andrea, aku bener bener minta maaf ya, jangan lama lama buat waktu sendiri nya ya.. aku bener "
+        "bener ngga bisa tidur sayang kalo ngga denger suara kamu 😔🫶"
         "</div>"
     )
     st.markdown(pesan_error, unsafe_allow_html=True)
