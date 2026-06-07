@@ -105,49 +105,47 @@ with col2:
 
 
 # --- MENAMPILKAN PESAN DI LUAR KOLOM AGAR BISA LEBAR ---
-# Logika ini kita taruh di luar 'with col2:' supaya pesannya bisa selebar layar
+# Format string diubah agar tidak terdeteksi sebagai kotak kode oleh Streamlit
 
 if tombol_maaf:
     st.balloons()
     st.toast("Terima kasih sayang... ❤️", icon="💖")
     
-    # Pesan dibuat rata kiri-kanan (justify) dan dipisah per paragraf agar lebih enak dibaca
-    pesan_sukses = """
-    <div style='padding: 30px; background-color: #FCE4EC; border-radius: 15px; color: #5E3A41; margin-top: 25px; border: 1px solid #F8BBD0; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>
-        <h3 style='text-align: center; color: #C07C88; margin-bottom: 20px;'>Aku minta maaf banget cantik.. baca ini ya.. 💌</h3>
-        
-        <div style='text-align: justify; font-size: 16px; line-height: 1.8; font-family: sans-serif;'>
-            Aku minta maaf banget ya cantik buat hari ini. Aku ngga tau kenapa ngga bisa ngendaliin emosi dan ego aku. 
-            Ngga seharusnya aku ngelakuin hal kaya tadi, bener bener kaya bocil banget. Aku tau dari awal semuanya salah aku. 
-            Kamu dibetein temen kamu, aku malah betingkah kaya gitu, aku malah ikutan bete bukannya nemenin kamu. 
-            Disaat kamu bete aku malah kaya gitu.
-            <br><br>
-            Aku bener-bener minta maaf ya sayang, kamu orang spesial buat aku cantik. Aku mau kamu, aku mau Andrea, 
-            bukan badan kamu, kamu bukan fantasi aku. Kamu perempuan aku, kamu cantiknya aku, kamu imutnya aku, kamu manisnya aku. 
-            Dan tetep jadi cewe yang ribet, yang sensian, yang gedein masalah, karena daya tarik kamu sebenernya disitu cantik.
-            <br><br>
-            Aku ngga mau kamu jadi orang lain di depan aku, aku mau Andrea jadi Andrea. Tetep jadi cewe imut yang prengat-prengut ya cantik, 
-            tetep jadi anak imut yang perasa dan bener-bener merhatiin hal sekecil apapun. Aku bener-bener ngga mau kamu jadi orang lain, 
-            karena aku mau kamu bukan orang lain.
-            <br><br>
-            Aku bener-bener minta maaf buat hari ini ya sayang, satu kesalahan yang bener-bener fatal. 
-            Tapi terus jujur ke aku ya cantik, aku mau perbaikin diri aku buat kamu. Jangan disimpen-simpen dan ditahan-tahan 
-            unek-unek kamu, keluarin aja, biar aku jadi cowo yang kamu mau. Ajarin aku, bimbing aku, aku bakal berubah demi kamu Andrea..
-            <br><br>
-            Dengan segala kekurangan dan kelemahan aku yang bahkan bisa dibilang sangat banyak, tapi aku bener-bener mau berjuang buat kamu. 
-            Walaupun aku bodoh, aneh, dan ngga jelas, setidaknya tekad aku ada karena aku beneran sayang banget sama kamu.. ❤️
-        </div>
-    </div>
-    """
+    pesan_sukses = (
+        "<div style='padding: 30px; background-color: #FCE4EC; border-radius: 15px; color: #5E3A41; margin-top: 25px; border: 1px solid #F8BBD0; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>"
+        "<h3 style='text-align: center; color: #C07C88; margin-bottom: 20px;'>Aku minta maaf banget cantik.. baca ini ya.. 💌</h3>"
+        "<div style='text-align: justify; font-size: 16px; line-height: 1.8; font-family: sans-serif;'>"
+        "Aku minta maaf banget ya cantik buat hari ini. Aku ngga tau kenapa ngga bisa ngendaliin emosi dan ego aku. "
+        "Ngga seharusnya aku ngelakuin hal kaya tadi, bener bener kaya bocil banget. Aku tau dari awal semuanya salah aku. "
+        "Kamu dibetein temen kamu, aku malah betingkah kaya gitu, aku malah ikutan bete bukannya nemenin kamu. "
+        "Disaat kamu bete aku malah kaya gitu."
+        "<br><br>"
+        "Aku bener-bener minta maaf ya sayang, kamu orang spesial buat aku cantik. Aku mau kamu, aku mau Andrea, "
+        "bukan badan kamu, kamu bukan fantasi aku. Kamu perempuan aku, kamu cantiknya aku, kamu imutnya aku, kamu manisnya aku. "
+        "Dan tetep jadi cewe yang ribet, yang sensian, yang gedein masalah, karena daya tarik kamu sebenernya disitu cantik."
+        "<br><br>"
+        "Aku ngga mau kamu jadi orang lain di depan aku, aku mau Andrea jadi Andrea. Tetep jadi cewe imut yang prengat-prengut ya cantik, "
+        "tetep jadi anak imut yang perasa dan bener-bener merhatiin hal sekecil apapun. Aku bener-bener ngga mau kamu jadi orang lain, "
+        "karena aku mau kamu bukan orang lain."
+        "<br><br>"
+        "Aku bener-bener minta maaf buat hari ini ya sayang, satu kesalahan yang bener-bener fatal. "
+        "Tapi terus jujur ke aku ya cantik, aku mau perbaikin diri aku buat kamu. Jangan disimpen-simpen dan ditahan-tahan "
+        "unek-unek kamu, keluarin aja, biar aku jadi cowo yang kamu mau. Ajarin aku, bimbing aku, aku bakal berubah demi kamu Andrea.."
+        "<br><br>"
+        "Dengan segala kekurangan dan kelemahan aku yang bahkan bisa dibilang sangat banyak, tapi aku bener-bener mau berjuang buat kamu. "
+        "Walaupun aku bodoh, aneh, dan ngga jelas, setidaknya tekad aku ada karena aku beneran sayang banget sama kamu.. ❤️"
+        "</div>"
+        "</div>"
+    )
     st.markdown(pesan_sukses, unsafe_allow_html=True)
 
 elif tombol_bete:
     st.toast("Gapapa, aku ngerti... 🥺", icon="🌧️")
     
-    pesan_error = """
-    <div style='text-align: center; padding: 20px; background-color: #F5EAEB; border-radius: 15px; color: #5E3A41; margin-top: 25px; border: 1px solid #E2A9B4; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>
-        <b>Gapapa kalau kamu masih marah.</b><br>
-        Aku bakal terus usaha sampe kamu luluh. 😔🫶
-    </div>
-    """
+    pesan_error = (
+        "<div style='text-align: center; padding: 20px; background-color: #F5EAEB; border-radius: 15px; color: #5E3A41; margin-top: 25px; border: 1px solid #E2A9B4; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>"
+        "<b>Gapapa kalau kamu masih marah.</b><br>"
+        "Aku bakal terus usaha sampe kamu luluh. 😔🫶"
+        "</div>"
+    )
     st.markdown(pesan_error, unsafe_allow_html=True)
