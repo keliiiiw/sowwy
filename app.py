@@ -85,7 +85,7 @@ st.markdown(tema_pink, unsafe_allow_html=True)
 
 
 # --- KONTEN WEB ---
-st.markdown("<h1>Halo Sayang... 🎀</h1>", unsafe_allow_html=True)
+st.markdown("<h1>Halo Andrea.. 🎀</h1>", unsafe_allow_html=True)
 st.write("---")
 
 st.write("Aku tau aku salah, dan aku bener-bener minta maaf ya.")
