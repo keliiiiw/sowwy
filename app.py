@@ -146,11 +146,11 @@ elif tombol_bete:
     
     pesan_error = (
         "<div style='text-align: center; padding: 20px; background-color: #F5EAEB; border-radius: 15px; color: #5E3A41; margin-top: 25px; border: 1px solid #E2A9B4; box-shadow: 0px 4px 10px rgba(0,0,0,0.05);'>"
-        "<b>aku kangen banget andrea.. jangan lama lama ya.. </b><br>"
-        "Aku kangen banget sama kamu, bener bener sekangen itu.. aku tau sekarang udah susah kamu buat percaya aku lagi "
-        "tapi serius cantik, aku bener bener kangen sama kamu, dan aku janji ngga akan bodoh kaya gini lagi, aku akan berusaha "
-        "jadi klei yang terbaik buat andrea, aku bener bener minta maaf ya, jangan lama lama buat waktu sendiri nya ya.. aku bener "
-        "bener ngga bisa tidur sayang kalo ngga denger suara kamu 😔🫶"
+        "<b>aku kangen banget Alea.. jangan lama lama ya.. </b><br>"
+        "Aku kangen banget sama kamu, bener bener sekangen itu.. aku tau sekarang kamu lagi bete dan males banget sama aku "
+        "tapi serius cantik, aku bener bener kangen sama kamu, dan aku janji ngga akan bodoh dan nyepelein tindakan bodoh aku kaya gini lagi, "
+        "mau kelakuan kecil ataupun besar, aku bener bener minta maaf ya, jangan lama lama marah nya ya.. aku bener "
+        "bener ngga bisa tidur malem ini kalo kamu masih marah sama aku Alea. 😔🫶"
         "</div>"
     )
     st.markdown(pesan_error, unsafe_allow_html=True)
