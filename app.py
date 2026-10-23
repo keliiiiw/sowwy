@@ -90,7 +90,7 @@ st.markdown("<h1>Halo Sayang... 🎀</h1>", unsafe_allow_html=True)
 st.write("---")
 
 st.write("Aku tau aku salah, dan aku bener-bener minta maaf ya.")
-st.write("Website kecil ini aku buat khusus buat kamu, sebagai tanda kalau aku serius mau perbaikin semuanya.")
+st.write("Website kecil ini aku buat khusus buat alea :) , aku serius mau minta maaf dan bener bener kangen sama kamu alea.")
 st.write("Aku sayang banget sama kamu.")
 
 st.write("") # Spasi kosong biar rapi
