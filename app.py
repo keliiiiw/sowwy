@@ -134,8 +134,8 @@ if tombol_maaf:
         "kelakuan aku tadi, Tapi serius cantik, aku bener bener minta maaf banget, aku ngerasa bersalah banget, aku dari tadi ngga "
         "tenang dan fokus buat ngapa ngapain, di otak aku cuman full mikirin kamu, aku takut kamu makin marah sama aku, bahkan aku takut kamu illfeel ke aku."
         "<br><br>"
-        "Dengan segala kekurangan dan kelemahan aku yang bahkan bisa dibilang sangat banyak, tapi aku bener-bener mau berjuang buat kamu. "
-        "Walaupun aku bodoh, aneh, dan ngga jelas, setidaknya tekad aku ada karena aku beneran sayang banget sama kamu.. ❤️"
+        "Dengan segala kekurangan dan kelemahan aku yang sangat banyak, aku harap kamu mau maafin aku.. maaf cantik, aku bener bener minta maaf.. "
+        "Aku bodoh, aneh, dan ngga jelas, Tapi serius cantik, aku sayang sama kamu Alea. ❤️"
         "</div>"
         "</div>"
     )
